@@ -45,5 +45,6 @@ public class hackthon {
         
         frame.getContentPane().add(panel);
         frame.setVisible(true);
+        
     }
 }
