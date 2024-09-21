@@ -23,6 +23,16 @@ public class hackthon {
             }
         });
         
+        // 创建重置按钮
+        JButton resetButton = new JButton("Reset");
+        resetButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // 清空搜索框
+                searchBar.setText("");
+            }
+        });
+
         // 布局
         JPanel panel = new JPanel();
         
@@ -31,6 +41,7 @@ public class hackthon {
         panel.add(patientIdLabel); // 添加标签到面板
         panel.add(searchBar);
         panel.add(generateReportButton);
+        panel.add(resetButton); // 添加重置按钮到面板
         
         frame.getContentPane().add(panel);
         frame.setVisible(true);
